@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<title>Palindrome</title>
+
+</head>
+<body>
+	<script type="text/javascript">function myFunction() {
+    	var x = document.getElementById('sel').value;
+    	document.getElementById('pali').value = x;}
+    </script>
+	<br><br><br><br>
+	<form action="pali.php" method="post" class="form-inline ">
+		<div class="row col-xs-6 col-md-offset-1">
+			<div class="">
+				<label for="pali">Is this word/sentence a palindrome: </label>
+				<input class="form-control" placeholder="" onfocus="this.value=''" type="text" id="pali" name="pali" value="Perica reže raci rep."></input>
+				<br>
+				<label>
+					<input name="test" type="checkbox" checked> check to ignore punctuation
+				</label>
+			</div>
+
+			<div>
+				<button type="submit" class="btn btn-success">Click me!</button>
+			</div>
+		</div>
+		<div class="row col-xs-4">
+			<div>Other palindroms:</div>
+			<select size="5" id="sel" onchange="myFunction()" multiple class="form-control">
+				<option> Mr. Owl ate my metal worm</option>
+				<option> A Santa lived as a devil at NASA</option>
+				<option>Eva, can I stab bats in a cave?</option>			
+				<option> Was it a car or a cat I saw?</option>
+				<option> A nut for a jar of tuna</option>
+				<option> On a clover, if alive erupts a vast pure evil, a fire volcano</option>
+				<option> Dammit, I'm mad!</option>
+				<option>Dog, as a devil deified, lived as a god.</option>
+				<option> Not so, Boston.</option>
+				<option>A Toyota's a Toyota</option>
+			</select>
+		</div>
+	</form>
+</body>
+</html>
