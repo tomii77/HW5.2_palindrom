@@ -1,8 +1,9 @@
 <?php
-	$myStr = $_POST['pali'];	
-	//spet ta fora s šumniki, če uporabim regex, mi zbriše tudi šumnike... tko da... tole je zaenkrat rešitev :(
+	$myStr = $_POST['pali'];
 	$withIgn = ", with unchecked \"<i>ignore punctuation</i>\"";
 	$myStr1 = $myStr;
+
+	//spet ta fora s šumniki, če uporabim regex, mi zbriše tudi šumnike... tko da... tole je zaenkrat rešitev :(
 	$punct = array("+",",",".","-","'","\"","&","!","?",":",";","#","~","=","/","$","£","^","(",")","_","<",">");
 	if(isset($_POST['test'])){	
 		$myStr1 = str_replace($punct,'', $myStr1);
